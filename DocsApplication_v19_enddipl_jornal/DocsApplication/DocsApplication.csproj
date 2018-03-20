@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12A1938A-5928-44CA-B975-64C663FCC7A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocsApplication</RootNamespace>
+    <AssemblyName>DocsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustoms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustoms.Designer.cs">
+      <DependentUpon>AddCustoms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewDocument.Designer.cs">
+      <DependentUpon>AddNewDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessTrip.Designer.cs">
+      <DependentUpon>BusinessTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCustom.Designer.cs">
+      <DependentUpon>ChangeCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseDoc.Designer.cs">
+      <DependentUpon>ChooseDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDoc.Designer.cs">
+      <DependentUpon>CreateDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryptForm.Designer.cs">
+      <DependentUpon>CryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="DecryptDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecryptDoc.Designer.cs">
+      <DependentUpon>DecryptDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncryptDoc.Designer.cs">
+      <DependentUpon>EncryptDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fire.Designer.cs">
+      <DependentUpon>Fire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hiring.Designer.cs">
+      <DependentUpon>Hiring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal.Designer.cs">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListCustoms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCustoms.Designer.cs">
+      <DependentUpon>ListCustoms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListDocs.Designer.cs">
+      <DependentUpon>ListDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="PCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCard.Designer.cs">
+      <DependentUpon>PCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Promotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promotion.Designer.cs">
+      <DependentUpon>Promotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RC4.cs" />
+    <Compile Include="SendDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendDocs.Designer.cs">
+      <DependentUpon>SendDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferJob.Designer.cs">
+      <DependentUpon>TransferJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacation.Designer.cs">
+      <DependentUpon>Vacation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustoms.resx">
+      <DependentUpon>AddCustoms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewDocument.resx">
+      <DependentUpon>AddNewDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessTrip.resx">
+      <DependentUpon>BusinessTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCustom.resx">
+      <DependentUpon>ChangeCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseDoc.resx">
+      <DependentUpon>ChooseDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDoc.resx">
+      <DependentUpon>CreateDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryptForm.resx">
+      <DependentUpon>CryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecryptDoc.resx">
+      <DependentUpon>DecryptDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptDoc.resx">
+      <DependentUpon>EncryptDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fire.resx">
+      <DependentUpon>Fire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hiring.resx">
+      <DependentUpon>Hiring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal.resx">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListCustoms.resx">
+      <DependentUpon>ListCustoms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListDocs.resx">
+      <DependentUpon>ListDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCard.resx">
+      <DependentUpon>PCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promotion.resx">
+      <DependentUpon>Promotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SendDocs.resx">
+      <DependentUpon>SendDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferJob.resx">
+      <DependentUpon>TransferJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacation.resx">
+      <DependentUpon>Vacation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DocsDataSet.xsc">
+      <DependentUpon>DocsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DocsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DocsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DocsDataSet.xss">
+      <DependentUpon>DocsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487189105_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487188947_back-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487189339_left_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-to-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChC3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchCustom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocsList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vacation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salary2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusinessTrip2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perevod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermono3d63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Docs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Docs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shifr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EncryptDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DecryptDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChDoc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iccrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddNewDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jornal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocsJ.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
